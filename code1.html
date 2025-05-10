@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skintel AI</title>
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff4db8;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .upload, .response {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .upload-box {
+            border: 2px dashed #666;
+            text-align: center;
+            padding: 40px;
+            margin-top: 10px;
+        }
+        .upload-box input {
+            margin-top: 10px;
+            display: block;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+        }
+        .submit-button { background-color: #ff4db8; color: white; }
+        .clear-button { background-color: #666; color: white; }
+        .record-button { background-color: #444; color: white; }
+        textarea {
+            width: 100%;
+            height: 60px;
+            margin-top: 10px;
+            background-color: #333;
+            color: white;
+            border: 1px solid #555;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        audio {
+            margin-top: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧠 Skintel AI</h1>
+    <div class="container">
+        <div class="upload">
+            <label>Upload Skin Image</label>
+            <div class="upload-box">
+                Drop Image Here<br>- or -<br>
+                <input type="file" accept="image/*">
+            </div>
+            <label>Voice Your Question</label><br>
+            <button class="record-button">Record</button>
+            <select><option>Default - Microphone</option></select>
+        </div>
+        <div class="response">
+            <label>Diagnosis / Response</label>
+            <textarea readonly></textarea>
+            <label>Doctor Voice Response</label>
+            <audio controls></audio>
+            <br>
+            <button class="submit-button">Submit</button>
+            <button class="clear-button">Clear</button>
+            <button class="clear-button">Flag</button>
+        </div>
+    </div>
+</body>
+</html>
