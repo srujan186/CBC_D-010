@@ -9,6 +9,8 @@ Features
 🤖 AI-powered diagnosis using Groq's llama-3.2-90b-vision-preview
 🔊 Voice responses with gTTS
 🚀 Real-time processing pipeline
+RAG(Retrieval Augmented Generation) used for storing patients history data but so that it can used for response for user's query.
+For implementing RAG we have used Langchain and Huggingface.
 Installation
 Requirements
 Python 3.9+
@@ -35,7 +37,7 @@ Get API key from Groq Cloud
 
 Usage
 python skintel_main.py
-The web interface will launch at http://localhost:7860
+The web interface will launch at [http://localhost:7860](http://127.0.0.1:7860)
 
 Workflow:
 
